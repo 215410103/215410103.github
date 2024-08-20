@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Natatoto</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('path/to/your/image/bgrown.jpg') center center fixed;
+            background-color: #22aec6;
+        }
+
+        header {
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            background-color: #007BFF;
+        }
+
+        nav {
+            background-color: #ddd;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+
+        button.edit {
+            background-color: #2196f3;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .service {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DESA NATATOTO</h1>
+    </header>
+
+    <nav>
+                <button onclick="showProfile()">Beranda</button>
+                <button onclick="showServices()">Profil</button>
+                <button onclick="showBooking()">Galeri</button>
+                <button onclick="logout()">Layanan </button>
+    </nav>
+
+    <section id="profileSection" style="display:none;">
+        <h2>SELAMAT DATANG DI DESA NATATOTO</h2>
+        <style>
+            /* Style untuk body */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-image: url('image.jpg'); /* Ganti dengan path gambar Anda */
+                background-size: cover; /* Mengisi seluruh elemen dengan gambar */
+                background-position: center; /* Memposisikan gambar di tengah */
+                background-repeat: no-repeat; /* Mencegah gambar diulang */
+                background-color: #22aec6; /* Warna latar belakang cadangan jika gambar tidak tersedia */
+            }
+    
+            /* Style untuk header */
+            header {
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                background-color: #007BFF;
+            }
+    
+            /* Style untuk konten */
+            section {
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan untuk konten */
+            }
+        </style>
+        
+    </section>
+
+    <section id="servicesSection">
+        <h2>Profil</h2>
+        
+        <div class="service">
+            <img src="gambar.jpg" alt="Sejarah Desa">
+            <h3>Kepala Desa</h3>
+            <p>YOSEPH MOSA</p>
+        </div>
+        
+        <div class="service">
+            <h3>Staf Desa</h3>
+            <p></p>
+        </div>
+        
+        <div class="service">
+            <h3>Visi dan Misi</h3>
+            <h3>Visi</h3>
+            <p>“MENCIPTAKAN TATA KELOLA PEMERINTAHAN YANG BERSIH DAN BERTANGGUNG JAWAB DALAM RANGKA 
+                MEWUJUDKAN MASYARAKAT DESA NATATOTO YANG CERDAS, MANDIRI, SEHAT, SEJAHTERA DAN BERMARTABAT”. </p>
+            <h3>Misi</h3>
+            <p> 1.	Meningkatkan Sistem Kinerja Aparatur Pemerintahan Desa agar kualitas pelayanan kepada masyarakat menjadi lebih baik.</p>
+            <p> 2.	Menyelenggarakan urusan Pemerintahan secara terbuka dan bertanggung jawab sesuai peraturan perundang undangan yang berlaku.</p>
+            <p> 3.	Meningkatkan Ekonomi Masyarakat melalui : Optimalisasi Lahan dengan menanam komoditi unggul sesuai kebutuhan dan permintaan pasar, Optimalisasi Lahan Sawah Tadah Hujan dengan system pengelolaan yang intensif dan pengolahan tepat waktu, Meningkatkan usaha di bidang peternakan baik ternak besar maupun kecil dengan system penanganan yang lebih baik</p>
+            <p> 4.	Menjalin kerjasama dengan semua pihak dalam rangka peningkatan kesejahteraan masyarakat </p>
+            <p> 5.	Membina pola hidup sehat dan peningkatan kwalitas posyandu bagi balita dan ibu hamil</p>
+            <p> 6.	Meningkatkan kwalitas kaum muda sebagai kader pembangunan dan kader pemimpin masa depan
+            <p> 7.	Membangun relasi dengan lembaga pendidikan formal maupun non formal guna menunjang mutu pendidikan generasi muda menjadi individu yang berkeTuhanan, bermoral, berpengetahuan luas dan mandiri</p>
+            <p> 8.	Menjalin kerjasama dengan semua pihak untuk mewujudkan keamanan dan ketertiban masyarakat </p>
+            <p> 9.	Penertiban Aset Desa Natatoto dan manfaatnya untuk kepentingan masyarakat</p>
+            <p> 10.	Pembangunan , Perbaikan dan Pemeliharaan Infrastruktur dalam desa berdasarkan skala prioritas kebutuhan masyarakat</p>
+            <p> 11.	Menggali potensi-potensi budaya yang telah diwarisi oleh para leluhur agar generasi muda dapat memahami dan melestarikan nilai-nilai luhur dan nilai-nilai sosial yang terkandung didalamnya.</p>
+    
+        </div>
+        
+        <div class="service">
+            <h3></h3>
+            <p>Masyarakat Desa Natatoto menghasilkan berbagai produk lokal seperti kerajinan tangan, tenun ikat, dan makanan khas yang dapat dibeli oleh wisatawan sebagai oleh-oleh.</p>
+        </div>
+    </section>
+
+    <section id="bookingSection" style="display:none;">
+        <h2>Galeri</h2>
+    
+        
+    <script>
+        function showProfile() {
+            hideAllSections();
+            document.getElementById('profileSection').style.display = 'block';
+        }
+
+        function showBooking() {
+            hideAllSections();
+            document.getElementById('bookingSection').style.display = 'block';
+        }
+
+        function showServices() {
+            hideAllSections();
+            document.getElementById('servicesSection').style.display = 'block';
+        }
+
+        function hideAllSections() {
+            document.getElementById('profileSection').style.display = 'none';
+            document.getElementById('bookingSection').style.display = 'none';
+            document.getElementById('servicesSection').style.display = 'none';
+        }
+
+        function logout() {
+            alert('Anda berhasil logout.');
+        }
+
+        function submitBooking() {
+            alert('Booking berhasil dilakukan!');
+        }
+    </script>
+
+</body>
+</html>
